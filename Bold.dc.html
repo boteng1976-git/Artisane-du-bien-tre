@@ -627,7 +627,7 @@ class Component extends DCLogic {
     const internal = this.props.internalBooking === true || this.props.internalBooking === 'true';
     const noop = () => {};
     const pickSvc = (id) => (internal ? () => this.setState({ service: id, time: '' }) : noop);
-    const ext = { t: internal ? '_self' : '_blank', premier: internal ? '#reserver' : 'mailto:aurelie.artisanedubienetre@gmail.com?subject=Premier%20%C3%A9change%20Reconnexion', reiki: internal ? '#reserver' : 'https://my.weezevent.com/seance-reiki-usui', kobido: internal ? '#reserver' : 'https://my.weezevent.com/massage-kobido-1' };
+    const ext = { t: internal ? '_self' : '_blank', premier: internal ? '#reserver' : 'https://calendly.com/aurelie-artisanedubienetre/reconnexion', reiki: internal ? '#reserver' : 'https://my.weezevent.com/seance-reiki-usui', kobido: internal ? '#reserver' : 'https://my.weezevent.com/massage-kobido-1' };
     const act = { premier: pickSvc('premier'), reiki: pickSvc('reiki-cabinet'), kobido: pickSvc('kobido') };
     const bookNote = internal ? 'Le planning de réservation est juste au-dessus.' : "Calendrier de réservation en ligne (s'ouvre dans un nouvel onglet)";
     const SERVICES = [
