@@ -560,7 +560,7 @@ body{margin:0}
           <h3 class="serif" style="margin:0 0 6px;font-size:36px;line-height:1">Écris-moi</h3>
           <p style="margin:0 0 22px;font-size:15px">Les champs marqués d'un astérisque sont obligatoires.</p>
           <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
-            <div role="status" style="background:#2A2218;color:#FBF3E4;border-radius:14px;padding:22px"><strong style="display:block;margin-bottom:6px">Merci, ton message est bien parti.</strong>Je te réponds personnellement dans les meilleurs délais.</div>
+            <div role="status" style="background:#2A2218;color:#FBF3E4;border-radius:14px;padding:22px"><strong style="display:block;margin-bottom:6px">Ton application de messagerie s'ouvre.</strong>Envoie le mail pré-rempli. Si rien ne s'ouvre, écris-moi directement à aurelie.artisanedubienetre@gmail.com.</div>
           </sc-if>
           <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
             <form onSubmit="{{ send }}" style="display:flex;flex-direction:column;gap:18px" novalidate="">
@@ -627,7 +627,7 @@ class Component extends DCLogic {
     const internal = this.props.internalBooking === true || this.props.internalBooking === 'true';
     const noop = () => {};
     const pickSvc = (id) => (internal ? () => this.setState({ service: id, time: '' }) : noop);
-    const ext = { t: internal ? '_self' : '_blank', premier: internal ? '#reserver' : 'https://calendly.com/aurelie-artisanedubienetre/reconnexion', reiki: internal ? '#reserver' : 'https://my.weezevent.com/seance-reiki-usui', kobido: internal ? '#reserver' : 'https://my.weezevent.com/massage-kobido-1' };
+    const ext = { t: internal ? '_self' : '_blank', premier: internal ? '#reserver' : 'mailto:aurelie.artisanedubienetre@gmail.com?subject=Premier%20%C3%A9change%20Reconnexion', reiki: internal ? '#reserver' : 'https://my.weezevent.com/seance-reiki-usui', kobido: internal ? '#reserver' : 'https://my.weezevent.com/massage-kobido-1' };
     const act = { premier: pickSvc('premier'), reiki: pickSvc('reiki-cabinet'), kobido: pickSvc('kobido') };
     const bookNote = internal ? 'Le planning de réservation est juste au-dessus.' : "Calendrier de réservation en ligne (s'ouvre dans un nouvel onglet)";
     const SERVICES = [
@@ -760,7 +760,19 @@ class Component extends DCLogic {
       sent: this.state.sent,
       notSent: !this.state.sent,
       toggleMenu: () => this.setState({ menu: !this.state.menu }),
-      send: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ sent: true }); }
+      send: (e) => {
+        if (e && e.preventDefault) e.preventDefault();
+        const g = (id) => { const el = document.getElementById(id); return el ? (el.value || '').trim() : ''; };
+        const c = document.querySelector('#ecrire input[name=consent]');
+        const prenom = g('b-prenom'), email = g('b-email'), msg = g('b-msg');
+        if (!prenom || !/\S+@\S+\.\S+/.test(email) || !msg || !(c && c.checked)) {
+          window.alert('Merci de renseigner ton prénom, une adresse e-mail valide, ton message, et de cocher la case de consentement.');
+          return;
+        }
+        const body = msg + '\n\n' + prenom + '\n' + email;
+        window.location.href = 'mailto:aurelie.artisanedubienetre@gmail.com?subject=' + encodeURIComponent('Message depuis le site, de ' + prenom) + '&body=' + encodeURIComponent(body);
+        this.setState({ sent: true });
+      }
     };
   }
 }
