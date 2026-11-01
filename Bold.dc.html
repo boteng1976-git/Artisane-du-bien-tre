@@ -14,21 +14,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0}
-.b{font-family:'DM Sans',system-ui,sans-serif;background:#44563A;color:#FBF3E4;font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.b{font-family:'DM Sans',system-ui,sans-serif;background:#044D2F;color:#FBF3E4;font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .b *{box-sizing:border-box}
 .b a{color:inherit}
 .w{max-width:1240px;margin:0 auto;padding-left:clamp(20px,5vw,48px);padding-right:clamp(20px,5vw,48px)}
 .s{padding-top:clamp(64px,9vw,130px);padding-bottom:clamp(64px,9vw,130px)}
 .serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:-0.015em}
-.chap{display:flex;align-items:center;gap:14px;font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#F5BE6B}
+.chap{display:flex;align-items:center;gap:14px;font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#B88917}
 .chap::after{content:"";height:1px;width:56px;background:currentColor;opacity:0.7}
 .bone{background:#F5EBDC;color:#2A2218}
 .bone .chap{color:#8A5A0A}
 .mut{color:#DDE2CC}
 .bone .mut{color:#5A4D3F}
 .pill{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:999px;font-weight:600;font-size:17px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;line-height:1.2;text-align:center}
-.pill-a{background:#F5BE6B;color:#2A2218 !important}
-.pill-a:hover{background:#F9D08C}
+.pill-a{background:#B88917;color:#2A2218 !important}
+.pill-a:hover{background:#B88917}
 .pill-o{border-color:#FBF3E4;color:#FBF3E4 !important;background:transparent}
 .pill-o:hover{background:rgba(251,243,228,0.12)}
 .pill-d{background:#2A2218;color:#FBF3E4 !important}
@@ -36,43 +36,43 @@ body{margin:0}
 .row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr) minmax(0,1fr) auto;gap:20px 36px;align-items:center;padding:34px 0;border-top:1px solid #2A2218;text-decoration:none;color:#2A2218}
 .row:hover{background:#EBDDC6}
 .row:last-child{border-bottom:1px solid #2A2218}
-.skip{position:absolute;left:-9999px;top:8px;background:#F5BE6B;color:#2A2218 !important;padding:12px 18px;border-radius:999px;z-index:100;font-weight:700}
+.skip{position:absolute;left:-9999px;top:8px;background:#B88917;color:#2A2218 !important;padding:12px 18px;border-radius:999px;z-index:100;font-weight:700}
 .skip:focus{left:12px}
-.b a:focus-visible,.b button:focus-visible,.b input:focus-visible,.b textarea:focus-visible{outline:3px solid #F5BE6B;outline-offset:3px;border-radius:8px}
+.b a:focus-visible,.b button:focus-visible,.b input:focus-visible,.b textarea:focus-visible{outline:3px solid #B88917;outline-offset:3px;border-radius:8px}
 .bone a:focus-visible,.bone button:focus-visible,.amber a:focus-visible,.amber button:focus-visible,.amber input:focus-visible,.amber textarea:focus-visible{outline-color:#2A2218}
 .chip{all:unset;box-sizing:border-box;cursor:pointer;min-height:64px;padding:16px 22px;border:2px solid rgba(251,243,228,0.4);border-radius:18px;font-family:'DM Sans',system-ui,sans-serif;font-size:19px;font-weight:600;line-height:1.3;color:#FBF3E4;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.chip:hover{border-color:#F5BE6B}
+.chip:hover{border-color:#B88917}
 .fld{display:flex;flex-direction:column;gap:6px}
 .fld label{font-weight:600;font-size:15px}
 .fld input,.fld textarea{font-family:'DM Sans',system-ui,sans-serif;font-size:17px;color:#2A2218;border:2px solid #2A2218;border-radius:12px;padding:12px 16px;min-height:52px;background:#FFF9EE}
 .fld textarea{min-height:120px;resize:vertical}
 .opt{box-sizing:border-box;display:flex;flex-direction:column;gap:10px;padding:26px;border:2px solid rgba(251,243,228,0.35);border-radius:22px;text-decoration:none;color:#FBF3E4;min-height:240px}
-.opt:hover{border-color:#F5BE6B;background:rgba(251,243,228,0.06)}
+.opt:hover{border-color:#B88917;background:rgba(251,243,228,0.06)}
 .cl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 .cl li{position:relative;padding-left:30px}
 .cl li::before{content:"";position:absolute;left:5px;top:0.45em;width:6px;height:12px;border:solid #2A2218;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
-.ico{width:72px;height:72px;border-radius:50%;border:2px solid #F5BE6B;display:flex;align-items:center;justify-content:center;flex:none}
-.ic{width:42px;height:42px;fill:none;stroke:#F5BE6B;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-.opt:hover .ico{background:#F5BE6B}
+.ico{width:72px;height:72px;border-radius:50%;border:2px solid #B88917;display:flex;align-items:center;justify-content:center;flex:none}
+.ic{width:42px;height:42px;fill:none;stroke:#B88917;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.opt:hover .ico{background:#B88917}
 .opt:hover .ic{stroke:#2A2218}
 .ci{width:26px;height:26px;flex:none;fill:none;stroke:currentColor;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
 .mbar{display:none}
 .menu-btn{display:none}
 #orientation,#reconnexion,#seances,#entreprises,#aurelie,#faq,#contact{scroll-margin-top:72px}
 .tab{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:999px;border:2px solid transparent;font-size:14.5px;font-weight:600;line-height:1.2;text-decoration:none;white-space:nowrap}
-.tab:hover{border-color:rgba(245,190,107,0.75)}
+.tab:hover{border-color:rgba(184,137,23,0.75)}
 .tab svg{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
 .crumb{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14px;font-weight:600;letter-spacing:0.03em;margin-bottom:18px}
 .crumb a{text-underline-offset:3px}
 .door{display:flex;align-items:center;gap:20px;margin-bottom:34px}
-.door>.ci{box-sizing:content-box;width:36px;height:36px;padding:16px;border:2px solid #F5BE6B;border-radius:50%;stroke:#F5BE6B}
+.door>.ci{box-sizing:content-box;width:36px;height:36px;padding:16px;border:2px solid #B88917;border-radius:50%;stroke:#B88917}
 .bone .door>.ci{border-color:#2A2218;stroke:#2A2218}
 .offer .mut{color:#3B2F1E}
 .bone .opt{border-color:rgba(42,34,24,0.45);color:#2A2218}
 .bone .opt:hover{border-color:#2A2218;background:rgba(42,34,24,0.05)}
 .bone .ico{border-color:#2A2218}
 .bone .ic{stroke:#2A2218}
-.bone .opt:hover .ico{background:#F5BE6B}
+.bone .opt:hover .ico{background:#B88917}
 .tbl{width:100%;min-width:820px;border-collapse:collapse;font-size:16px;background:#FFF8EC}
 .tbl th,.tbl td{padding:16px 18px;text-align:left;vertical-align:top;border-bottom:1px solid #DCC9A8}
 .tbl thead th,.tbl thead td{background:#2A2218;color:#FBF3E4;border-bottom:0}
@@ -97,7 +97,7 @@ body{margin:0}
   .row{grid-template-columns:1fr;gap:10px;padding:28px 0}
 }
 @media (max-width: 760px){
-  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#44563A;border-top:1px solid rgba(251,243,228,0.25);padding:10px 16px}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#044D2F;border-top:1px solid rgba(251,243,228,0.25);padding:10px 16px}
   .b{padding-bottom:78px}
   .cta-head{display:none !important}
 }
@@ -112,10 +112,10 @@ body{margin:0}
   <div id="haut" style="border-bottom:1px solid rgba(251,243,228,0.16)">
     <div class="w" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px;padding-top:16px;padding-bottom:16px">
       <div style="display:flex;align-items:center;gap:16px;min-width:0">
-        <img src="./assets/25c90e4014949585e91a3965b789fd7b.jpg" alt="Aurélie Aké" style="width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:center 20%;border:3px solid #F5BE6B;flex:none">
+        <img src="./assets/25c90e4014949585e91a3965b789fd7b.jpg" alt="Aurélie Aké" style="width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:center 20%;border:3px solid #B88917;flex:none">
         <div style="line-height:1.25;min-width:0">
-          <h1 style="margin:0;font-size:30px;line-height:1;font-weight:400"><a href="#haut" class="serif" style="text-decoration:none;font-size:30px;line-height:1;display:block">artisane <em style="color:#F5BE6B">du bien-être</em></a></h1>
-          <div style="font-size:17px;font-weight:600;margin-top:10px;line-height:1.4;color:#FBF3E4"><strong style="color:#F5BE6B;font-weight:700">Aurélie Aké</strong> · Maison du Port, Couëron (44220) · Visio partout en France</div>
+          <h1 style="margin:0;font-size:30px;line-height:1;font-weight:400"><a href="#haut" class="serif" style="text-decoration:none;font-size:30px;line-height:1;display:block">artisane <em style="color:#B88917">du bien-être</em></a></h1>
+          <div style="font-size:17px;font-weight:600;margin-top:10px;line-height:1.4;color:#FBF3E4"><strong style="color:#B88917;font-weight:700">Aurélie Aké</strong> · Maison du Port, Couëron (44220) · Visio partout en France</div>
         </div>
       </div>
       <div class="cta-head" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
@@ -127,7 +127,7 @@ body{margin:0}
   </div>
 
   <!-- Navigation collante -->
-  <header style="position:sticky;top:0;z-index:50;background:#44563A;border-bottom:1px solid rgba(251,243,228,0.16)">
+  <header style="position:sticky;top:0;z-index:50;background:#044D2F;border-bottom:1px solid rgba(251,243,228,0.16)">
     <div class="w" style="max-width:1480px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;min-height:64px;padding-top:6px;padding-bottom:6px">
       <nav aria-label="Navigation principale" class="navd" style="display:flex;flex-wrap:wrap;gap:4px;align-items:center">
         <a class="tab" href="#orientation" style="{{ tab.orientation.style }}" aria-current="{{ tab.orientation.cur }}"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="22"></circle><path d="M40 24 L35 35 L24 40 L29 29 Z"></path></svg>Par où commencer</a>
@@ -137,7 +137,7 @@ body{margin:0}
         <a class="tab" href="#entreprises" style="{{ tab.entreprises.style }}" aria-current="{{ tab.entreprises.cur }}"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="22" r="6"></circle><circle cx="14" cy="28" r="4.5"></circle><circle cx="50" cy="28" r="4.5"></circle><path d="M20 50 C20 40 25 36 32 36 C39 36 44 40 44 50 Z"></path><path d="M5 50 C5 43 8 39 14 39"></path><path d="M59 50 C59 43 56 39 50 39"></path></svg>Mon équipe est sous pression</a>
         <a class="tab" href="#aurelie" style="color:#DDE2CC;font-weight:500">Aurélie</a>
         <a class="tab" href="#faq" style="color:#DDE2CC;font-weight:500">Questions</a>
-        <sc-if value="{{ internal }}" hint-placeholder-val="{{ false }}"><a class="tab" href="#reserver" style="background:#F5BE6B;color:#2A2218;font-weight:700">Réserver</a></sc-if>
+        <sc-if value="{{ internal }}" hint-placeholder-val="{{ false }}"><a class="tab" href="#reserver" style="background:#B88917;color:#2A2218;font-weight:700">Réserver</a></sc-if>
       </nav>
       <div style="display:flex;gap:12px;align-items:center;margin-left:auto">
         <a class="menu-btn" href="https://www.instagram.com/artisanedubienetre_reiki/" target="_blank" rel="noopener noreferrer" aria-label="Instagram d'Artisane du Bien-être (s'ouvre dans un nouvel onglet)" style="width:46px;height:46px;border-radius:50%;border:2px solid #FBF3E4;color:#FBF3E4;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
@@ -147,7 +147,7 @@ body{margin:0}
     <sc-if value="{{ menu }}" hint-placeholder-val="{{ false }}">
       <nav id="menu-mobile" aria-label="Menu mobile" style="border-top:1px solid rgba(251,243,228,0.16)">
         <div class="w" style="display:flex;flex-direction:column;padding-top:8px;padding-bottom:18px">
-          <a class="serif" href="#orientation" style="text-decoration:none;font-size:28px;padding:9px 0;color:#F5BE6B">Par où commencer</a>
+          <a class="serif" href="#orientation" style="text-decoration:none;font-size:28px;padding:9px 0;color:#B88917">Par où commencer</a>
           <a class="serif" href="#reconnexion" style="text-decoration:none;font-size:28px;padding:9px 0">Je tourne en rond</a>
           <a class="serif" href="#reiki" style="text-decoration:none;font-size:28px;padding:9px 0">J'ai besoin de souffler</a>
           <a class="serif" href="#kobido" style="text-decoration:none;font-size:28px;padding:9px 0">Je m'offre une pause</a>
@@ -276,17 +276,17 @@ body{margin:0}
       <div class="w">
         <nav class="crumb" aria-label="Fil d'Ariane"><a href="#orientation">← Par où commencer</a><span aria-hidden="true">·</span><span>Porte 1 sur 4</span></nav>
         <div class="door serif" style="font-size:clamp(38px,5vw,68px);line-height:1"><svg class="ci" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 12 A20 20 0 1 1 12.7 37.6"></path><path d="M7.5 43 L12.7 37.6 L18.5 42.5"></path><circle cx="32" cy="32" r="3.5"></circle></svg>Je tourne en rond</div>
-        <p class="serif" style="margin:0;font-size:clamp(38px,6.6vw,96px);line-height:1.02;max-width:1100px">Tu avances. Tu gères. Tu fais ce qu'il faut… mais au fond, tu sens que <em style="color:#F5BE6B">quelque chose n'est plus vraiment à sa place.</em></p>
+        <p class="serif" style="margin:0;font-size:clamp(38px,6.6vw,96px);line-height:1.02;max-width:1100px">Tu avances. Tu gères. Tu fais ce qu'il faut… mais au fond, tu sens que <em style="color:#B88917">quelque chose n'est plus vraiment à sa place.</em></p>
         <div style="display:flex;flex-wrap:wrap;gap:24px 64px;margin-top:48px;align-items:flex-start">
           <p class="mut" style="margin:0;flex:1 1 340px;max-width:520px;font-size:clamp(18px,1.8vw,21px)">Tu réfléchis beaucoup. Tu t'adaptes. Tu hésites sur certaines décisions. Et tu ne sais plus toujours ce que <strong style="color:#FBF3E4">toi</strong>, tu veux vraiment.</p>
-          <p class="serif" style="margin:0;flex:1 1 340px;max-width:520px;font-size:clamp(28px,3.2vw,44px);line-height:1.1">Pas pour en faire davantage.<br><em style="color:#F5BE6B">Pour vivre davantage selon toi.</em></p>
+          <p class="serif" style="margin:0;flex:1 1 340px;max-width:520px;font-size:clamp(28px,3.2vw,44px);line-height:1.1">Pas pour en faire davantage.<br><em style="color:#B88917">Pour vivre davantage selon toi.</em></p>
         </div>
       </div>
     </div>
 
     <div class="s" style="padding-top:0">
       <div class="w" style="display:flex;flex-wrap:wrap;gap:56px 72px;align-items:flex-start">
-        <div class="offer amber" style="flex:1 1 380px;min-width:0;position:sticky;top:110px;align-self:flex-start;background:#F5BE6B;color:#2A2218;border-radius:28px;padding:clamp(26px,3.4vw,44px)">
+        <div class="offer amber" style="flex:1 1 380px;min-width:0;position:sticky;top:110px;align-self:flex-start;background:#B88917;color:#2A2218;border-radius:28px;padding:clamp(26px,3.4vw,44px)">
           <div style="font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:14px">Mon accompagnement individuel</div>
           <h2 class="serif" style="margin:0 0 26px;font-size:clamp(44px,5.4vw,80px);line-height:0.95;max-width:100%;overflow-wrap:break-word">Re<em style="color:#6B4308">connexion</em></h2>
           <div class="serif" style="font-size:clamp(100px,16vw,230px);line-height:0.8;color:#2A2218">4</div>
@@ -297,11 +297,11 @@ body{margin:0}
         </div>
         <div style="flex:1 1 460px;min-width:0">
           <ol style="list-style:none;margin:0;padding:0">
-            <li style="display:flex;gap:26px;padding:28px 0;border-top:1px solid rgba(251,243,228,0.3)"><span class="serif" style="font-size:44px;line-height:1;color:#F5BE6B;min-width:64px">01</span><div><div class="serif" style="font-size:clamp(32px,3.6vw,46px);line-height:1.05">Clarifier</div><div class="mut">ce que tu veux vraiment.</div></div></li>
-            <li style="display:flex;gap:26px;padding:28px 0;border-top:1px solid rgba(251,243,228,0.3)"><span class="serif" style="font-size:44px;line-height:1;color:#F5BE6B;min-width:64px">02</span><div><div class="serif" style="font-size:clamp(32px,3.6vw,46px);line-height:1.05">Retrouver</div><div class="mut">tes besoins, tes envies et tes priorités.</div></div></li>
-            <li style="display:flex;gap:26px;padding:28px 0;border-top:1px solid rgba(251,243,228,0.3)"><span class="serif" style="font-size:44px;line-height:1;color:#F5BE6B;min-width:64px">03</span><div><div class="serif" style="font-size:clamp(32px,3.6vw,46px);line-height:1.05">Comprendre</div><div class="mut">ce qui te bloque ou te fait tourner en rond.</div></div></li>
-            <li style="display:flex;gap:26px;padding:28px 0;border-top:1px solid rgba(251,243,228,0.3)"><span class="serif" style="font-size:44px;line-height:1;color:#F5BE6B;min-width:64px">04</span><div><div class="serif" style="font-size:clamp(32px,3.6vw,46px);line-height:1.05">Choisir</div><div class="mut">avec plus de confiance et de cohérence.</div></div></li>
-            <li style="display:flex;gap:26px;padding:28px 0;border-top:1px solid rgba(251,243,228,0.3);border-bottom:1px solid rgba(251,243,228,0.3)"><span class="serif" style="font-size:44px;line-height:1;color:#F5BE6B;min-width:64px">05</span><div><div class="serif" style="font-size:clamp(32px,3.6vw,46px);line-height:1.05">Agir</div><div class="mut">concrètement, pour faire évoluer ce qui doit l'être.</div></div></li>
+            <li style="display:flex;gap:26px;padding:28px 0;border-top:1px solid rgba(251,243,228,0.3)"><span class="serif" style="font-size:44px;line-height:1;color:#B88917;min-width:64px">01</span><div><div class="serif" style="font-size:clamp(32px,3.6vw,46px);line-height:1.05">Clarifier</div><div class="mut">ce que tu veux vraiment.</div></div></li>
+            <li style="display:flex;gap:26px;padding:28px 0;border-top:1px solid rgba(251,243,228,0.3)"><span class="serif" style="font-size:44px;line-height:1;color:#B88917;min-width:64px">02</span><div><div class="serif" style="font-size:clamp(32px,3.6vw,46px);line-height:1.05">Retrouver</div><div class="mut">tes besoins, tes envies et tes priorités.</div></div></li>
+            <li style="display:flex;gap:26px;padding:28px 0;border-top:1px solid rgba(251,243,228,0.3)"><span class="serif" style="font-size:44px;line-height:1;color:#B88917;min-width:64px">03</span><div><div class="serif" style="font-size:clamp(32px,3.6vw,46px);line-height:1.05">Comprendre</div><div class="mut">ce qui te bloque ou te fait tourner en rond.</div></div></li>
+            <li style="display:flex;gap:26px;padding:28px 0;border-top:1px solid rgba(251,243,228,0.3)"><span class="serif" style="font-size:44px;line-height:1;color:#B88917;min-width:64px">04</span><div><div class="serif" style="font-size:clamp(32px,3.6vw,46px);line-height:1.05">Choisir</div><div class="mut">avec plus de confiance et de cohérence.</div></div></li>
+            <li style="display:flex;gap:26px;padding:28px 0;border-top:1px solid rgba(251,243,228,0.3);border-bottom:1px solid rgba(251,243,228,0.3)"><span class="serif" style="font-size:44px;line-height:1;color:#B88917;min-width:64px">05</span><div><div class="serif" style="font-size:clamp(32px,3.6vw,46px);line-height:1.05">Agir</div><div class="mut">concrètement, pour faire évoluer ce qui doit l'être.</div></div></li>
           </ol>
           <p class="mut" style="margin:28px 0 0;font-size:17px;max-width:560px">Mon rôle n'est pas de te donner des réponses toutes faites, mais de t'aider à retrouver assez de clarté pour trouver les tiennes. Avec douceur, mais avec une vraie direction.</p>
         </div>
@@ -371,7 +371,7 @@ body{margin:0}
       <div class="w">
         <nav class="crumb" aria-label="Fil d'Ariane"><a href="#orientation">← Par où commencer</a><span aria-hidden="true">·</span><span>Porte 4 sur 4</span></nav>
         <div class="door serif" style="font-size:clamp(38px,5vw,68px);line-height:1"><svg class="ci" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="22" r="6"></circle><circle cx="14" cy="28" r="4.5"></circle><circle cx="50" cy="28" r="4.5"></circle><path d="M20 50 C20 40 25 36 32 36 C39 36 44 40 44 50 Z"></path><path d="M5 50 C5 43 8 39 14 39"></path><path d="M59 50 C59 43 56 39 50 39"></path></svg>Mon équipe est sous pression</div>
-        <h2 class="serif" style="margin:0 0 26px;font-size:clamp(40px,6vw,84px);line-height:1;max-width:980px">Et si vos équipes prenaient enfin le temps <em style="color:#F5BE6B">de respirer ?</em></h2>
+        <h2 class="serif" style="margin:0 0 26px;font-size:clamp(40px,6vw,84px);line-height:1;max-width:980px">Et si vos équipes prenaient enfin le temps <em style="color:#B88917">de respirer ?</em></h2>
         <p class="mut" style="margin:0 0 40px;max-width:640px;font-size:clamp(18px,1.9vw,21px)">Des séances courtes, adaptées au rythme professionnel, pour contribuer à réduire le stress, à améliorer la concentration et à installer un climat de travail plus serein.</p>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px;margin-bottom:40px">
           <div style="border:1px solid rgba(251,243,228,0.3);border-radius:20px;padding:28px"><img src="./assets/8cfab1f7656dd17e87624afdd89322f0.jpg" alt="Bol chantant tenu dans une main" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;display:block;margin-bottom:16px"><div class="serif" style="font-size:32px;line-height:1.05;margin-bottom:10px">Relaxation guidée</div><div class="mut" style="font-size:16px">Une méditation guidée en groupe, pour se recentrer et renforcer la cohésion d'équipe.</div></div>
@@ -409,7 +409,7 @@ body{margin:0}
     <section class="s" id="avis">
       <div class="w">
         <div class="chap" style="margin-bottom:18px">Avis clients</div>
-        <h2 class="serif" style="margin:0 0 44px;font-size:clamp(44px,7vw,104px);line-height:1">Ils sont <em style="color:#F5BE6B">ravis</em></h2>
+        <h2 class="serif" style="margin:0 0 44px;font-size:clamp(44px,7vw,104px);line-height:1">Ils sont <em style="color:#B88917">ravis</em></h2>
         <figure style="margin:0 0 56px">
           <blockquote class="serif" style="margin:0;font-size:clamp(34px,5.2vw,72px);line-height:1.05;max-width:1100px">« … elle m'aide à me poser les bonnes questions et retrouver mon mindset. »</blockquote>
           <figcaption class="mut" style="margin-top:22px;font-size:16px">Chris · Avis Google · 5 sur 5</figcaption>
@@ -461,7 +461,7 @@ body{margin:0}
     <section id="reserver" class="s" style="scroll-margin-top:72px">
       <div class="w">
         <div class="chap" style="margin-bottom:22px">Réserver</div>
-        <h2 class="serif" style="margin:0 0 14px;font-size:clamp(44px,7vw,104px);line-height:0.95">Réserve ton <em style="color:#F5BE6B">créneau</em></h2>
+        <h2 class="serif" style="margin:0 0 14px;font-size:clamp(44px,7vw,104px);line-height:0.95">Réserve ton <em style="color:#B88917">créneau</em></h2>
         <p class="mut" style="margin:0 0 8px;max-width:680px">Choisis ta prestation, un jour et une heure, puis laisse-moi tes coordonnées. Tout se passe ici, sans quitter la page.</p>
         <p class="mut" style="margin:0 0 40px;max-width:680px;font-size:14px">Maquette : les créneaux affichés sont des exemples. Dans la version en ligne, ils seront reliés à ton agenda réel.</p>
         <div style="display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start">
@@ -508,7 +508,7 @@ body{margin:0}
             </div>
           </div>
 
-          <aside class="amber" aria-label="Récapitulatif de ta réservation" style="flex:1 1 340px;min-width:0;max-width:480px;margin:0 auto;background:#F5BE6B;color:#2A2218;border-radius:28px;padding:clamp(22px,3.4vw,38px);position:sticky;top:96px;align-self:flex-start">
+          <aside class="amber" aria-label="Récapitulatif de ta réservation" style="flex:1 1 340px;min-width:0;max-width:480px;margin:0 auto;background:#B88917;color:#2A2218;border-radius:28px;padding:clamp(22px,3.4vw,38px);position:sticky;top:96px;align-self:flex-start">
             <sc-if value="{{ bookDone }}" hint-placeholder-val="{{ false }}">
               <div role="status">
                 <div class="serif" style="font-size:40px;line-height:1;margin-bottom:12px">C'est réservé.</div>
@@ -546,7 +546,7 @@ body{margin:0}
     </sc-if>
 
     <!-- Contact -->
-    <section class="s amber" id="contact" style="background:#F5BE6B;color:#2A2218">
+    <section class="s amber" id="contact" style="background:#B88917;color:#2A2218">
       <div class="w" style="display:flex;flex-wrap:wrap;gap:48px 64px;align-items:flex-start">
         <div style="flex:1 1 420px;min-width:0">
           <h2 class="serif" style="margin:0 0 22px;font-size:clamp(48px,7.4vw,110px);line-height:0.94">On en parle ?</h2>
@@ -583,7 +583,7 @@ body{margin:0}
   <!-- Pied de page -->
   <footer style="font-size:15px">
     <div class="w" style="padding-top:44px;padding-bottom:30px;display:flex;flex-wrap:wrap;gap:28px 56px;justify-content:space-between">
-      <div style="max-width:340px"><div class="serif" style="font-size:30px;line-height:1;margin-bottom:10px">artisane <em style="color:#F5BE6B">du bien-être</em></div><p class="mut" style="margin:0">Accompagnement individuel, Reiki Usui et massage Kobido à Couëron (44) et en visioconférence.</p></div>
+      <div style="max-width:340px"><div class="serif" style="font-size:30px;line-height:1;margin-bottom:10px">artisane <em style="color:#B88917">du bien-être</em></div><p class="mut" style="margin:0">Accompagnement individuel, Reiki Usui et massage Kobido à Couëron (44) et en visioconférence.</p></div>
       <nav aria-label="Pied de page" style="display:flex;flex-wrap:wrap;gap:12px 36px;align-items:flex-start"><a href="#contact">Mentions légales</a><a href="#contact">CGV</a><a href="#contact">Confidentialité</a><a href="#contact">Instagram</a></nav>
     </div>
     <div class="w mut" style="padding-top:20px;padding-bottom:28px;border-top:1px solid rgba(251,243,228,0.2);font-size:13px;line-height:1.6">
@@ -682,7 +682,7 @@ class Component extends DCLogic {
       hint: ready ? 'Tu pourras déplacer ou annuler ton rendez-vous.' : 'Choisis un jour et une heure, puis renseigne ton prénom et ton e-mail.'
     };
     const vis = this.state.vis || {};
-    const mk = (id) => ({ style: vis[id] ? 'background:#F5BE6B;color:#2A2218;border-color:#F5BE6B' : 'color:#FBF3E4', cur: vis[id] ? 'location' : 'false' });
+    const mk = (id) => ({ style: vis[id] ? 'background:#B88917;color:#2A2218;border-color:#B88917' : 'color:#FBF3E4', cur: vis[id] ? 'location' : 'false' });
     const tab = { orientation: mk('orientation'), reconnexion: mk('reconnexion'), reiki: mk('reiki'), kobido: mk('kobido'), entreprises: mk('entreprises') };
     const L = {
       premier: { href: ext.premier, t: ext.t, act: act.premier },
